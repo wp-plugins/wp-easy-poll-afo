@@ -19,12 +19,12 @@ This is an easy to setup polling/ voting plugin for users. Create Polls from adm
 
 = WP Easy Poll PRO =
 
-In the PRO version Users will be able to create Polls from frontend of your site. 
-* Polls created by users will not be visible in the site untill administrator manually add them in the Widgets or Sortcodes.
-* Administrator of the site will be notified by email once a new poll is created by users.
-* Voting results can be emailed to users from admin panel. 
-* Admin can download voting results as CSV.
-
+In the PRO version Users will be able to create Polls from frontend of your site.<br>
+* Polls created by users will not be visible in the site untill administrator manually add them in the Widgets or Sortcodes.<br>
+* Administrator of the site will be notified by email once a new poll is created by users.<br>
+* Voting results can be emailed to users from admin panel. <br>
+* Admin can download voting results as CSV.<br>
+<br>
 Click <a href="http://aviplugins.com/wp-easy-poll-pro/">here</a> for full details. Get it <a href="http://aviplugins.com/wp-easy-poll-pro/">here</a> in USD 2.00. 
 
 
