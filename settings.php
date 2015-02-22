@@ -14,6 +14,7 @@ class poll_settings {
 	function  easy_poll_settings_afo_options () {
 	global $wpdb;
 	$poll_result_after_it_ends = get_option('poll_result_after_it_ends');
+	$this->wp_easy_poll_pro_add();
 	?>
 	<form name="f" method="post" action="">
 	<input type="hidden" name="option" value="easy_poll_afo_options_save_settings" />
@@ -33,6 +34,15 @@ class poll_settings {
 	</table>
 	</form>
 	<?php }
+	
+	function wp_easy_poll_pro_add(){ ?>
+	<table border="0" style="width:98%;background-color:#FFFFD2; border:1px solid #E6DB55; padding:0px 0px 0px 10px; margin:10px 0px 10px 0px;">
+  <tr>
+    <td><p>The <strong>PRO</strong> version of this plugin has additional features. <strong>1)</strong> Export/ Email voting results to your users. <strong>2)</strong> Let users create polls from front end. <strong>3)</strong> Choose color for the voting result bar as per your liking. Get it <a href="http://aviplugins.com/wp-easy-poll-pro/" target="_blank">here</a> in <strong>USD 2.00</strong> </p></td>
+  </tr>
+</table>
+	<?php }
+	
 	
 	
 	function easy_poll_scripts() {

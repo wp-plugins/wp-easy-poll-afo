@@ -4,7 +4,7 @@ Donate link: http://aviplugins.com/donate/
 Tags: poll, poll widget, vote, voting, polling, vote result, submit vote, user poll, user vote, wp poll
 Requires at least: 2.0.2
 Tested up to: 4.1
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,6 +24,7 @@ In the PRO version Users will be able to create Polls from frontend of your site
 * Administrator of the site will be notified by email once a new poll is created by users.<br>
 * Voting results can be emailed to users from admin panel. <br>
 * Admin can download voting results as CSV.<br>
+* Choose color for the voting bar in frontend as per your theme. 
 <br>
 Click <a href="http://aviplugins.com/wp-easy-poll-pro/">here</a> for full details. Get it <a href="http://aviplugins.com/wp-easy-poll-pro/">here</a> in USD 2.00. 
 
@@ -54,12 +55,16 @@ ecommerce-wishlist/">WP Ecommerce Wishlist</a>.
 
 1. Polls list page admin panel.
 2. Poll widget view.
-3. Add new poll page admin panel.
-4. Poll settings page admin panel.
+3. Poll results view.
+4. Add new poll page admin panel.
+5. Poll settings page admin panel.
 
 == Changelog ==
 
-= 1.0.1 =
+= 1.1.0 =
+* Second release with some bug fixing.
+
+= 1.0.0 =
 * this is the first release.
 
 == Upgrade Notice ==
