@@ -1,0 +1,95 @@
+msgid "Poll is empty!"
+msgstr "Poll er tom !"
+
+msgid "Voting will start on"
+msgstr "Afstemningen begynder den"
+
+msgid "Voting is over."
+msgstr "Afstemningen er slut."
+
+msgid "View Result"
+msgstr "Vis Resultat"
+
+msgid "Data is empty!"
+msgstr "Dataene er tom !"
+
+msgid "Your vote is successfully added."
+msgstr "Din stemme er nu tilf&oslash;jet ."
+
+msgid "You have already voted for this poll."
+msgstr "Du har allerede stemt for denne afstemning ."
+
+msgid "Please try again."
+msgstr "Pr&oslash;v venligst igen ."
+
+msgid "Check result after poll ends."
+msgstr "Tjek resultatet efter meningsm&aring;ling slutter."
+
+msgid "Visitor"
+msgstr "Visitor"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Poll"
+msgstr "poll"
+
+msgid "Start"
+msgstr "start"
+
+msgid "End"
+msgstr "end"
+
+msgid "Status"
+msgstr "status"
+
+msgid "Action"
+msgstr "action"
+
+msgid "Edit"
+msgstr "edit"
+
+msgid "Delete"
+msgstr "Slet"
+
+msgid "Please login to add poll"
+msgstr "Venligst login for at tilf&oslash;je meningsm&aring;ling"
+
+msgid "Poll Question"
+msgstr "Poll Sp&oslash;rgsm&aring;l"
+
+msgid "Poll Answers"
+msgstr "poll Answers"
+
+msgid "Add More Answers"
+msgstr "Tilf&oslash;j flere svar"
+
+msgid "Submit"
+msgstr "Indsend"
+
+msgid "Poll Edit"
+msgstr "Poll Edit"
+
+msgid "Poll is started & cannot be updated now!"
+msgstr "Afstemning er startet & kan ikke opdateres nu !"
+
+msgid "Please login first"
+msgstr "Venligst login f&oslash;rst"
+
+msgid "Poll updated successfully"
+msgstr "Poll opdateret"
+
+msgid "Poll not found"
+msgstr "Poll ikke fundet"
+
+msgid "New Poll Added"
+msgstr "Ny afstemning tilf&oslash;jet"
+
+msgid "New Poll data added successfully"
+msgstr "Ny afstemning data tilf&oslash;jet"
+
+msgid "Back"
+msgstr "tilbage"
+
+msgid "Remove"
+msgstr "fjerne"
