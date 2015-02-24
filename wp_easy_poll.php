@@ -3,7 +3,7 @@
 Plugin Name: WP Easy Poll
 Plugin URI: http://avifoujdar.wordpress.com/category/my-wp-plugins/
 Description: This is an easy poll plugin. Polls can be created from admin panel and displayed as widget in frontend. Users can submit vote and view poll results from frontend.
-Version: 1.1.0
+Version: 1.1.1
 Author: avimegladon
 Author URI: http://aviplugins.com/
 */
@@ -122,9 +122,9 @@ class general_poll_class{
 		
 		foreach ( $results as $key => $value ) {
 			if($sel_id == $value['p_id']){
-				$ret .= '<option value="'.$value['p_id'].'" selected="selected">'.$value['p_ques'].'</option>';
+				$ret .= '<option value="'.$value['p_id'].'" selected="selected">'.stripslashes($value['p_ques']).'</option>';
 			} else {
-				$ret .= '<option value="'.$value['p_id'].'">'.$value['p_ques'].'</option>';
+				$ret .= '<option value="'.$value['p_id'].'">'.stripslashes($value['p_ques']).'</option>';
 			}
 		}
 		return $ret;
@@ -548,11 +548,11 @@ class poll_class {
 		</tr>
 		<tr>
 			<td><strong><?php _e('Start','epa');?></strong></td>
-			<td><input type="text" name="p_start" id="p_start" /><?php $this->dateTimeJsCall('p_start');?></td>
+			<td><input type="text" name="p_start" id="p_start" required="required"/><?php $this->dateTimeJsCall('p_start');?></td>
 		</tr>
 		<tr>
 			<td><strong><?php _e('End','epa');?></strong></td>
-			<td><input type="text" name="p_end" id="p_end" /><?php $this->dateTimeJsCall('p_end');?></td>
+			<td><input type="text" name="p_end" id="p_end" required="required"/><?php $this->dateTimeJsCall('p_end');?></td>
 		</tr>
 		<tr>
 			<td><strong><?php _e('Status','epa');?></strong></td>
@@ -585,7 +585,7 @@ class poll_class {
 	?>
 	<form name="f" action="" method="post">
 	<?php $this->process_selector('p_edit');?>
-	<input type="hidden" name="p_id" value="<?php echo $id;?>" />
+	<input type="hidden" name="p_id" id="p_id" value="<?php echo $id;?>" />
 	<h2><?php _e('Poll Edit','eca');?></h2>
 	<table width="95%" border="0" cellspacing="10" style="background-color:#FFFFFF; margin:2%; padding:5px; border:1px solid #CCCCCC;">
 		<tr>
@@ -598,15 +598,17 @@ class poll_class {
 		</tr>
 		<tr>
 			<td><strong><?php _e('Start','epa');?></strong></td>
-			<td><input type="text" name="p_start" id="p_start" value="<?php echo $data['p_start'];?>" /><?php $this->dateTimeJsCall('p_start');?></td>
+			<td><input type="text" name="p_start" id="p_start" value="<?php echo $data['p_start'];?>" required="required" /><?php $this->dateTimeJsCall('p_start');?></td>
 		</tr>
 		<tr>
 			<td><strong><?php _e('End','epa');?></strong></td>
-			<td><input type="text" name="p_end" id="p_end" value="<?php echo $data['p_end'];?>" /><?php $this->dateTimeJsCall('p_end');?></td>
+			<td><input type="text" name="p_end" id="p_end" value="<?php echo $data['p_end'];?>" required="required"/><?php $this->dateTimeJsCall('p_end');?></td>
 		</tr>
 		<tr>
 			<td><strong><?php _e('Status','epa');?></strong></td>
-			<td><select name="p_status"><?php echo $this->get_poll_status_selected($data['p_status']);?></select></td>
+			<td><select name="p_status" id="p_status"><?php echo $this->get_poll_status_selected($data['p_status']);?></select>
+			<input type="button" name="submit" value="<?php _e('Save','eca');?>" class="button" onclick="updatePollStatus();" />
+			</td>
 		</tr>
 		<tr>
 			<td><h3><?php _e('Poll Answers','epa');?></h3></td>
@@ -689,6 +691,16 @@ function process_poll_data(){
 		$wpdb->update( $wpdb->prefix.$pc->table, $update, $where );
 		$pc->add_message('Poll deleted successfully.', 'success');
 		wp_redirect($pc->plugin_page);
+		exit;
+	}
+	
+	if(isset($_REQUEST['action']) and $_REQUEST['action'] == 'updatePollStatus'){
+		global $wpdb;
+		$pc = new poll_class;
+		$where = array('p_id' => $_REQUEST['p_id']);
+		$update =  array('p_status' => $_REQUEST['p_status']);
+		$wpdb->update( $wpdb->prefix.$pc->table, $update, $where );
+		echo 'Poll status updated successfully.';
 		exit;
 	}
 	
@@ -799,6 +811,10 @@ class poll_wid extends WP_Widget {
 		$data1 = $pc->get_poll_answers_data($instance['poll_id']);
 		$mc->view_message();
 		$poll_status = $gc->poll_status_message($instance['poll_id']);
+		if($data['p_status'] != 'Active'){
+			_e('Poll is Inactive','epa');
+			return;
+		}
 		?>
 		<h3><?php echo stripslashes($data['p_ques']);?></h3>
 		<div id="poll_<?php echo $instance['poll_id'];?>">

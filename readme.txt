@@ -4,7 +4,7 @@ Donate link: http://aviplugins.com/donate/
 Tags: poll, poll widget, vote, voting, polling, vote result, submit vote, user poll, user vote, wp poll
 Requires at least: 2.0.2
 Tested up to: 4.1
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -60,6 +60,9 @@ ecommerce-wishlist/">WP Ecommerce Wishlist</a>.
 5. Poll settings page admin panel.
 
 == Changelog ==
+
+= 1.1.1 =
+* Poll status can be updated for polls that are already started.
 
 = 1.1.0 =
 * Second release with some bug fixing.
