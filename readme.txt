@@ -21,14 +21,14 @@ Use this plugin as voting solution for your site. This plugin is very easy to se
 
 = WP Easy Poll PRO =
 
-In the PRO version Users will be able to create Polls from frontend of your site.<br>
+In the <strong>PRO</strong> version Users will be able to create Polls from frontend of your site.<br>
 * Polls created by users will not be visible in the site untill administrator manually add them in the Widgets or Sortcodes.<br>
-* Administrator of the site will be notified by email once a new poll is created by users.<br>
-* Voting results can be emailed to users from admin panel. <br>
-* Admin can download voting results as CSV.<br>
-* Choose color for the voting bar in frontend as per your theme. 
+* Administrator of the site will be <strong>Notified by Email</strong> once a new poll is created by users.<br>
+* Voting results can be <strong>Emailed</strong> to users from admin panel. <br>
+* Admin can download voting results as <strong>CSV</strong>.<br>
+* Choose <strong>Color</strong> for the voting bar in frontend as per your theme. 
 <br>
-Click <a href="http://aviplugins.com/wp-easy-poll-pro/">here</a> for full details. Get it <a href="http://aviplugins.com/wp-easy-poll-pro/">here</a> in USD 2.00. 
+Click <a href="http://aviplugins.com/wp-easy-poll-pro/">here</a> for full details. Get it <a href="http://aviplugins.com/wp-easy-poll-pro/">here</a> in <strong>USD 2.00</strong> 
 
 
 > Checkout other plugins <a href="http://aviplugins.com/fb-login-widget-pro/">Facebook Login Widget 
