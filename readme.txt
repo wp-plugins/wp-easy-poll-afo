@@ -3,7 +3,7 @@ Contributors: avimegladon
 Donate link: http://aviplugins.com/donate/
 Tags: poll, poll widget, vote, voting, polling, vote result, submit vote, user poll, user vote, wp poll
 Requires at least: 2.0.2
-Tested up to: 4.1
+Tested up to: 4.1.1
 Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -11,6 +11,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 This is an easy to setup polling/ voting plugin for users. Create Polls from admin panel and display in widgets.
 
 == Description ==
+
+Use this plugin as voting solution for your site. This plugin is very easy to setup and use. Just create polls and add the poll widgets in the sidebars. Registered users as well as visitors of your site can submit votes. One user can submit vote only once per poll. Visitor votes are tracked by their IP addresses.
 
 * This is a simple user polling plugin. 
 * Create polls from admin panel. Unlimited polls can be created from admin panel.
