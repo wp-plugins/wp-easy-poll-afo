@@ -38,6 +38,8 @@ href="http://aviplugins.com/contact-form-with-shortcode-pro/">Newsletter Subscri
 href="http://aviplugins.com/wp-support-pro/">WP Support (PRO)</a>, <a href="http://aviplugins.com/wp-
 ecommerce-wishlist/">WP Ecommerce Wishlist</a>.
 
+> Post your plugin related queries at <a href="http://aviplugins.com/support.php">http://aviplugins.com/support.php</a>
+
 == Installation ==
 
 1. Upload `wp-easy-poll.zip` to the `/wp-content/plugins/` directory.
