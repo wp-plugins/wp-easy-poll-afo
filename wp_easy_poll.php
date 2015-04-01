@@ -4,7 +4,7 @@ Plugin Name: WP Easy Poll
 Plugin URI: http://avifoujdar.wordpress.com/category/my-wp-plugins/
 Description: This is an easy poll plugin. Polls can be created from admin panel and displayed as widget in frontend. Users can submit vote and view poll results from frontend.
 Version: 1.1.1
-Author: avimegladon
+Author: aviplugins.com
 Author URI: http://aviplugins.com/
 */
 

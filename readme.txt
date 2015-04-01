@@ -1,5 +1,5 @@
 === WP Easy Poll ===
-Contributors: avimegladon
+Contributors: aviplugins.com
 Donate link: http://aviplugins.com/donate/
 Tags: poll, poll widget, vote, voting, polling, vote result, submit vote, user poll, user vote, wp poll
 Requires at least: 2.0.2
