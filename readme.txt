@@ -12,7 +12,7 @@ This is an easy to setup polling/ voting plugin for users. Create Polls from adm
 
 == Description ==
 
-Use this plugin as voting solution for your wordpress site. This plugin is very easy to setup and use. Just create polls and add the poll widget in the sidebar. Registered users as well as visitors of your site can submit votes. One user can submit vote only once per poll. Visitor votes are tracked by their IP addresses.
+Use this plugin as a voting solution for your wordpress site. The plugin is very easy to setup and use. Just create polls and add the poll widget in the sidebar. Registered users as well as visitors of your site can submit votes. One user can submit vote only once per poll. Visitor's votes are tracked by their IP addresses.
 
 * This is a simple user polling plugin. 
 * Create polls from admin panel. Unlimited polls can be created from admin panel.
